@@ -1,0 +1,58 @@
+body{
+    height: 100%;
+    background-image: url('../image/灰白.png');
+}
+.container{
+    /*background-color: red;*/
+    /*width:calc(100% - 100px);*/
+    /*height:0;*/
+    /*padding-bottom:calc((100% - 100px)/3;*/
+}
+
+.form-login{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-login{
+    margin-top: 80px;
+    font-weight: 400;
+}
+.from-control{
+    width: 200px;
+}
+.form-login .from-control{
+/*.form-login {*/
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+
+}
+.form-login .form-control:focus{
+    /*position: relative;*/
+    /*box-sizing: border-box;*/
+    /*height: auto;*/
+    /*padding: 10px;*/
+    /*font-size: 16px;*/
+    z-index: 2;
+}
+.form-login input[type="text"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-login input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+form a{
+    /*background-color: red;*/
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 10px;
+}

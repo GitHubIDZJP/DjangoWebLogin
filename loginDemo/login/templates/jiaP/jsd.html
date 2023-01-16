@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+  <link href = "{% static 'login/css/jsd.css'%}" rel="stylesheet">
+    <title>登录</title>
+    <style>
+        div.container{
+            margin: 15% 40%;
+        }
+    </style>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="col">
+       <form class="form-login" action="/hello/" method="post">
+           <!--防止跨站-->
+           {% csrf_token %}
+          <h3 class="text-center">欢迎登录</h3>
+           <div class="from-group">
+               <label for="id_username">用户名:</label>
+            <input class="form-control" type="text" id="id_username" name="username" placeholder="请输入名字">
+           </div>
+           <div class="from-group">
+               <label for="id_password">密码:</label>
+            <input class="form-control" type="password" id="id_password" name="password" placeholder="请输入密码">
+           </div>
+           <div>
+               <a href="/register" class="text-success" onclick="javascript:alert('您已经注册过了，账号是:sougouid密码是qazwsxed')">
+                   <ins>新用户注册</ins></a>
+                   <button type="submit" class="btn btn-primary float-right">登录</button>
+           </div>
+       </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+
